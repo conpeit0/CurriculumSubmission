@@ -1,0 +1,33 @@
+@media screen and (max-width: 479px) {
+
+    .header{
+        width: 160px;
+        justify-content: center;
+    }
+
+    .container{
+        width: 40px;
+        height: 140px;
+        flex-direction: column;
+    }
+
+    .main{
+        flex-direction: column;
+    }
+
+    .block1{
+        width: 200px;
+        height: 100px;
+    }
+    .block2{
+        width: 160px;
+        border: 20px solid #8c2727 ;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+
+    }
+
+    .footer {
+        width: 200px;
+    }
+}
