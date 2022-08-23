@@ -18,5 +18,8 @@ for ($number=1; $number<101; $number++)
     {
         echo $number ;
     }
+
+    echo "<br>" ;
+
 }
 ?>
