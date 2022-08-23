@@ -1,11 +1,10 @@
 <?php
-$fruits=["リンゴ" => "300円","みかん"=>"150円", "桃"=>"3000円"]
+$fruits=["リンゴ" => "300","みかん"=>"150", "桃"=>"3000"];
 
-foreach ($fruits as $key => $value) 
+foreach ($fruits as $key => $value ) 
 {
-    echo ("${key}は${value}です")
+    printf("%sは%d円です。", $key, $value);
 }
-
 ?>
 
 
