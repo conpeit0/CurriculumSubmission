@@ -12,11 +12,17 @@ $ans3=$opt3[0];
 ?>
 <p>お疲れ様です<?php echo "$name" ; ?>さん</p>
 <!--フォームの作成 通信はPOST通信で-->
+
 <h2>①ネットワークのポート番号は何番？</h2>
 <!--③ 問題のradioボタンを「foreach」を使って作成する-->
+<?php
+function MakeOption($opt1){ 
+    return "<P><input type="radio" name="hyouka" value="good" />".$opt1."</p>" ;
+}?>
+<form action="answer.php" method="post">
 <?php 
 foreach ($opt1 as $value){
-    echo "<input tipe="radio" name="ans1" value=$value />$value" ;
+    echo MakeOption($value) ;
 }?>
  
 <h2>②Webページを作成するための言語は？</h2>
@@ -26,3 +32,7 @@ foreach ($opt1 as $value){
 <!--③ 問題のradioボタンを「foreach」を使って作成する-->
 
 <!--問題の正解の変数と名前の変数を[answer.php]に送る-->
+<p>
+<input type="submit" value="送信する">
+</p>
+</form>
