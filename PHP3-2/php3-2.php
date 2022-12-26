@@ -10,7 +10,7 @@
   //引数には値段を受け取り、税込価格を返答します。
 function getPostTaxPrice($cost, $name){
     $PostTaxPrice = $cost * (1 + "$tax");
-    return .$name."の税込み価格は".$PostTaxPrice."円です。";
+    print .$name."の税込み価格は".$PostTaxPrice."円です。";
 }
 
   //④繰り返し文を使って画面に指定の文字を表示しましょう！
