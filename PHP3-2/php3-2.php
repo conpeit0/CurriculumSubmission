@@ -9,8 +9,8 @@
   //③税率を計算する関数を用意します。 
   //引数には値段を受け取り、税込価格を返答します。
 function getPostTaxPrice($cost, $name){
-    $PostTaxPrice = $cost * (1 + "$tax");
-    print .$name."の税込み価格は".$PostTaxPrice."円です。";
+    $PostTaxPrice = $cost * (1 + $tax);
+    print $name."の税込み価格は".$PostTaxPrice."円です。";
 }
 
   //④繰り返し文を使って画面に指定の文字を表示しましょう！
