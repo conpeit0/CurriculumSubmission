@@ -1,5 +1,5 @@
 <?php
-$num=1234958;
-$moji=$num;
-echo $moji;
+$num=2;
+$result = mt_rand(1,6)* $num ;
+echo $result;
 ?>

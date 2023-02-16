@@ -3,7 +3,8 @@
   //②フォームからのデータを受け取ります
   $name = $_GET['name'];
   $num = $_GET['num'];
-  $today=date("Y/m/d", time());
+  date_default_timezone_set ('Asia/Tokyo');
+  $today=date("Y/m/d H:i:s", time());
 
   //③受け取った数字に1~6までのランダムな数字を掛け合わせて
   //変数に入れてください
@@ -30,25 +31,18 @@
   {
       $fortune="大吉";
   }
-  else ($result<=36)
+  else
   {
       $fortune="残念";
   }
-  
-  print $today;
+
+  //⑤今日の日付と、名前、番号、おみくじ結果を表示しましょう
+ 
+  echo $today;
   echo "<br>";
-  echo ("名前は$neme です。") ;
+  echo ("名前は $name です。") ;
   echo "<br>";
   echo ("番号は$result です。");
   echo "<br>" ;
   echo ("結果は$fortune です。");
-  ?>
-
-  //⑤今日の日付と、名前、番号、おみくじ結果を表示しましょう
- 
-
- 
-
- 
-
- 
+  ?> 
